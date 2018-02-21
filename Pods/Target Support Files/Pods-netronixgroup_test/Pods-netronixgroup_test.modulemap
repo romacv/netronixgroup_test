@@ -1,0 +1,6 @@
+framework module Pods_netronixgroup_test {
+  umbrella header "Pods-netronixgroup_test-umbrella.h"
+
+  export *
+  module * { export * }
+}

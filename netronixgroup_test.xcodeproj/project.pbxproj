@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065BF4506A9BDD677096396E /* Pods_netronixgroup_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292A9CECAAC71C2F49A9B631 /* Pods_netronixgroup_testTests.framework */; };
+		F38A1C45585A19F2AE931FBA /* Pods_netronixgroup_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */; };
 		F8DA74E6203E28900001CF35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA74E5203E28900001CF35 /* AppDelegate.swift */; };
 		F8DA74E8203E28900001CF35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA74E7203E28900001CF35 /* ViewController.swift */; };
 		F8DA74EB203E28900001CF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DA74E9203E28900001CF35 /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		085F64577EFF07D0ADEEE643 /* Pods-netronixgroup_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netronixgroup_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-netronixgroup_test/Pods-netronixgroup_test.release.xcconfig"; sourceTree = "<group>"; };
+		16D7F03D1D947A04BDE9A812 /* Pods-netronixgroup_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netronixgroup_testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-netronixgroup_testTests/Pods-netronixgroup_testTests.release.xcconfig"; sourceTree = "<group>"; };
+		292A9CECAAC71C2F49A9B631 /* Pods_netronixgroup_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netronixgroup_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C681EE58BE48DDF28D941707 /* Pods-netronixgroup_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netronixgroup_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netronixgroup_test/Pods-netronixgroup_test.debug.xcconfig"; sourceTree = "<group>"; };
+		D1D9CD13899F5AF194AB601C /* Pods-netronixgroup_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netronixgroup_testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netronixgroup_testTests/Pods-netronixgroup_testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netronixgroup_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA74E2203E28900001CF35 /* netronixgroup_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netronixgroup_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA74E5203E28900001CF35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8DA74E7203E28900001CF35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38A1C45585A19F2AE931FBA /* Pods_netronixgroup_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065BF4506A9BDD677096396E /* Pods_netronixgroup_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92FB986D170A0832B6D706F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C681EE58BE48DDF28D941707 /* Pods-netronixgroup_test.debug.xcconfig */,
+				085F64577EFF07D0ADEEE643 /* Pods-netronixgroup_test.release.xcconfig */,
+				D1D9CD13899F5AF194AB601C /* Pods-netronixgroup_testTests.debug.xcconfig */,
+				16D7F03D1D947A04BDE9A812 /* Pods-netronixgroup_testTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D270E17C95729181F8A3F680 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */,
+				292A9CECAAC71C2F49A9B631 /* Pods_netronixgroup_testTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8DA74D9203E28900001CF35 = {
 			isa = PBXGroup;
 			children = (
 				F8DA74E4203E28900001CF35 /* netronixgroup_test */,
 				F8DA74F9203E28910001CF35 /* netronixgroup_testTests */,
 				F8DA74E3203E28900001CF35 /* Products */,
+				92FB986D170A0832B6D706F3 /* Pods */,
+				D270E17C95729181F8A3F680 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8DA74FF203E28910001CF35 /* Build configuration list for PBXNativeTarget "netronixgroup_test" */;
 			buildPhases = (
+				97CB99BDBBE4435BD5F4B7B9 /* [CP] Check Pods Manifest.lock */,
 				F8DA74DE203E28900001CF35 /* Sources */,
 				F8DA74DF203E28900001CF35 /* Frameworks */,
 				F8DA74E0203E28900001CF35 /* Resources */,
+				CB9E469429C0016898FB4FDE /* [CP] Embed Pods Frameworks */,
+				5EBF8A7F2449F3761ECEDDEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8DA7502203E28910001CF35 /* Build configuration list for PBXNativeTarget "netronixgroup_testTests" */;
 			buildPhases = (
+				56E57678CC280FE7D85C20D5 /* [CP] Check Pods Manifest.lock */,
 				F8DA74F2203E28910001CF35 /* Sources */,
 				F8DA74F3203E28910001CF35 /* Frameworks */,
 				F8DA74F4203E28910001CF35 /* Resources */,
+				2E656D66F01E851474A8C4A4 /* [CP] Embed Pods Frameworks */,
+				60518790B06AC3B52AA85061 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E656D66F01E851474A8C4A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netronixgroup_testTests/Pods-netronixgroup_testTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56E57678CC280FE7D85C20D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EBF8A7F2449F3761ECEDDEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netronixgroup_test/Pods-netronixgroup_test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60518790B06AC3B52AA85061 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netronixgroup_testTests/Pods-netronixgroup_testTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CB99BDBBE4435BD5F4B7B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9E469429C0016898FB4FDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netronixgroup_test/Pods-netronixgroup_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8DA74DE203E28900001CF35 /* Sources */ = {
@@ -351,11 +482,13 @@
 		};
 		F8DA7500203E28910001CF35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C681EE58BE48DDF28D941707 /* Pods-netronixgroup_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BPE3YE97TU;
 				INFOPLIST_FILE = netronixgroup_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "romacv.netronixgroup-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,11 +499,13 @@
 		};
 		F8DA7501203E28910001CF35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 085F64577EFF07D0ADEEE643 /* Pods-netronixgroup_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BPE3YE97TU;
 				INFOPLIST_FILE = netronixgroup_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "romacv.netronixgroup-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +516,7 @@
 		};
 		F8DA7503203E28910001CF35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1D9CD13899F5AF194AB601C /* Pods-netronixgroup_testTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +534,7 @@
 		};
 		F8DA7504203E28910001CF35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D7F03D1D947A04BDE9A812 /* Pods-netronixgroup_testTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
