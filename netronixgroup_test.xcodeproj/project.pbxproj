@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		065BF4506A9BDD677096396E /* Pods_netronixgroup_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292A9CECAAC71C2F49A9B631 /* Pods_netronixgroup_testTests.framework */; };
 		F38A1C45585A19F2AE931FBA /* Pods_netronixgroup_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */; };
+		F823E3D0203E3CC500EE1991 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823E3CF203E3CC500EE1991 /* APIManager.swift */; };
 		F8DA74E6203E28900001CF35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA74E5203E28900001CF35 /* AppDelegate.swift */; };
 		F8DA74E8203E28900001CF35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA74E7203E28900001CF35 /* ViewController.swift */; };
 		F8DA74EB203E28900001CF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DA74E9203E28900001CF35 /* Main.storyboard */; };
 		F8DA74ED203E28900001CF35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DA74EC203E28900001CF35 /* Assets.xcassets */; };
 		F8DA74F0203E28900001CF35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DA74EE203E28900001CF35 /* LaunchScreen.storyboard */; };
 		F8DA74FB203E28910001CF35 /* netronixgroup_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA74FA203E28910001CF35 /* netronixgroup_testTests.swift */; };
+		F8F864E4203E4327009E39B6 /* APIManager+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F864E3203E4327009E39B6 /* APIManager+Methods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 		C681EE58BE48DDF28D941707 /* Pods-netronixgroup_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netronixgroup_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netronixgroup_test/Pods-netronixgroup_test.debug.xcconfig"; sourceTree = "<group>"; };
 		D1D9CD13899F5AF194AB601C /* Pods-netronixgroup_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netronixgroup_testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netronixgroup_testTests/Pods-netronixgroup_testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netronixgroup_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F823E3CF203E3CC500EE1991 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F89BF911203E3DC1006C443D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89BF913203E3E2F006C443D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA74E2203E28900001CF35 /* netronixgroup_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netronixgroup_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA74E5203E28900001CF35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8DA74E7203E28900001CF35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		F8DA74F6203E28910001CF35 /* netronixgroup_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = netronixgroup_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA74FA203E28910001CF35 /* netronixgroup_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netronixgroup_testTests.swift; sourceTree = "<group>"; };
 		F8DA74FC203E28910001CF35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F864E3203E4327009E39B6 /* APIManager+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+Methods.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,8 @@
 		D270E17C95729181F8A3F680 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F89BF913203E3E2F006C443D /* Alamofire.framework */,
+				F89BF911203E3DC1006C443D /* Alamofire.framework */,
 				D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */,
 				292A9CECAAC71C2F49A9B631 /* Pods_netronixgroup_testTests.framework */,
 			);
@@ -115,6 +123,8 @@
 				F8DA74EC203E28900001CF35 /* Assets.xcassets */,
 				F8DA74EE203E28900001CF35 /* LaunchScreen.storyboard */,
 				F8DA74F1203E28900001CF35 /* Info.plist */,
+				F823E3CF203E3CC500EE1991 /* APIManager.swift */,
+				F8F864E3203E4327009E39B6 /* APIManager+Methods.swift */,
 			);
 			path = netronixgroup_test;
 			sourceTree = "<group>";
@@ -330,8 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F823E3D0203E3CC500EE1991 /* APIManager.swift in Sources */,
 				F8DA74E8203E28900001CF35 /* ViewController.swift in Sources */,
 				F8DA74E6203E28900001CF35 /* AppDelegate.swift in Sources */,
+				F8F864E4203E4327009E39B6 /* APIManager+Methods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
