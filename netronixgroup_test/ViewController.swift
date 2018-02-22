@@ -8,11 +8,50 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    let cellId = "cell"
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrayEvents.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! EventCollectionViewCell
+        let item = arrayEvents[indexPath.row]
+        
+        return cell
+    }
 
+    var arrayEvents: Array<Event> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        collectionView.register(UINib.init(nibName: "EventCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
+        collectionView.reloadData()
+        
+        APIManager.shared.sseRequest(parameters: [:],
+                                     successHandler: { (response) in
+                                        let responseArray = response.arrayValue
+                                        for responseItem in responseArray {
+                                            
+                                            var event = Event.init()
+                                            event.mapping(json: responseItem)
+                                            self.arrayEvents.append(event)
+                                        }
+                                       DispatchQueue.main.async {
+                                        //self.tableView.reloadData()
+                                        
+                                        self.collectionView.reloadData()
+                                        }
+                                        //
+        },
+                                     errorHandler: { (error) in
+                                        //
+        })
     }
 
     override func didReceiveMemoryWarning() {

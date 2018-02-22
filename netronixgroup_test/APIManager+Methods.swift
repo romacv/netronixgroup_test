@@ -15,8 +15,8 @@ private let kSsePath = "sse"
 extension APIManager {
     
     func sseRequest(parameters: [String : Any],
-                    successHandler: @escaping (Any) -> Void,
-                    errorHandler: @escaping (Any) -> Void) {
+                    successHandler: @escaping (SwiftyJSON.JSON) -> Void,
+                    errorHandler: @escaping (Error) -> Void) {
         
         requestStream(parameters: parameters,
                       encoding: URLEncoding.default,

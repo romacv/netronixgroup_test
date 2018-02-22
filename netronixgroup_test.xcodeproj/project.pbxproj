@@ -11,7 +11,9 @@
 		F38A1C45585A19F2AE931FBA /* Pods_netronixgroup_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */; };
 		F823E3D0203E3CC500EE1991 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823E3CF203E3CC500EE1991 /* APIManager.swift */; };
 		F858C396203E7E620057BB26 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858C395203E7E620057BB26 /* Helpers.swift */; };
-		F858C398203E80960057BB26 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858C397203E80960057BB26 /* Measurement.swift */; };
+		F858C398203E80960057BB26 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858C397203E80960057BB26 /* Event.swift */; };
+		F858C39B203F0A230057BB26 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858C399203F0A230057BB26 /* EventCollectionViewCell.swift */; };
+		F858C39C203F0A230057BB26 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F858C39A203F0A230057BB26 /* EventCollectionViewCell.xib */; };
 		F8DA74E6203E28900001CF35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA74E5203E28900001CF35 /* AppDelegate.swift */; };
 		F8DA74E8203E28900001CF35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA74E7203E28900001CF35 /* ViewController.swift */; };
 		F8DA74EB203E28900001CF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DA74E9203E28900001CF35 /* Main.storyboard */; };
@@ -40,7 +42,9 @@
 		D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netronixgroup_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F823E3CF203E3CC500EE1991 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		F858C395203E7E620057BB26 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		F858C397203E80960057BB26 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		F858C397203E80960057BB26 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F858C399203F0A230057BB26 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		F858C39A203F0A230057BB26 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
 		F89BF911203E3DC1006C443D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89BF913203E3E2F006C443D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA74E2203E28900001CF35 /* netronixgroup_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netronixgroup_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +134,9 @@
 				F823E3CF203E3CC500EE1991 /* APIManager.swift */,
 				F8F864E3203E4327009E39B6 /* APIManager+Methods.swift */,
 				F858C395203E7E620057BB26 /* Helpers.swift */,
-				F858C397203E80960057BB26 /* Measurement.swift */,
+				F858C397203E80960057BB26 /* Event.swift */,
+				F858C399203F0A230057BB26 /* EventCollectionViewCell.swift */,
+				F858C39A203F0A230057BB26 /* EventCollectionViewCell.xib */,
 			);
 			path = netronixgroup_test;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8DA74F0203E28900001CF35 /* LaunchScreen.storyboard in Resources */,
+				F858C39C203F0A230057BB26 /* EventCollectionViewCell.xib in Resources */,
 				F8DA74ED203E28900001CF35 /* Assets.xcassets in Resources */,
 				F8DA74EB203E28900001CF35 /* Main.storyboard in Resources */,
 			);
@@ -347,8 +354,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F823E3D0203E3CC500EE1991 /* APIManager.swift in Sources */,
+				F858C39B203F0A230057BB26 /* EventCollectionViewCell.swift in Sources */,
 				F8DA74E8203E28900001CF35 /* ViewController.swift in Sources */,
-				F858C398203E80960057BB26 /* Measurement.swift in Sources */,
+				F858C398203E80960057BB26 /* Event.swift in Sources */,
 				F8DA74E6203E28900001CF35 /* AppDelegate.swift in Sources */,
 				F858C396203E7E620057BB26 /* Helpers.swift in Sources */,
 				F8F864E4203E4327009E39B6 /* APIManager+Methods.swift in Sources */,

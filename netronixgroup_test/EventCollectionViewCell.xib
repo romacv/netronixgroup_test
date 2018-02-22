@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EventCollectionViewCell" customModule="netronixgroup_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QVB-iz-AKD">
+                        <rect key="frame" x="15" y="0.0" width="80" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="3jK-gZ-Atd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-97-QkB">
+                        <rect key="frame" x="95" y="0.0" width="2" height="50"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="eDW-wj-5Tw"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCD-FA-bVQ">
+                        <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DdZ-qc-K02"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5RN-y1-967">
+                        <rect key="frame" x="241" y="0.0" width="64" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="SEV-Xc-Wef"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPZ-A5-NB5">
+                        <rect key="frame" x="239" y="0.0" width="2" height="50"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="xHO-9C-Y9a"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-dp-xRt">
+                        <rect key="frame" x="97" y="0.0" width="142" height="50"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QVB-iz-AKD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1K8-nT-TEl"/>
+                <constraint firstAttribute="bottom" secondItem="iCD-FA-bVQ" secondAttribute="bottom" id="5Bl-MG-RFr"/>
+                <constraint firstItem="gyg-97-QkB" firstAttribute="leading" secondItem="QVB-iz-AKD" secondAttribute="trailing" id="7CA-9K-f16"/>
+                <constraint firstItem="lbK-dp-xRt" firstAttribute="leading" secondItem="gyg-97-QkB" secondAttribute="trailing" id="98l-OW-wZC"/>
+                <constraint firstAttribute="bottom" secondItem="5RN-y1-967" secondAttribute="bottom" id="Dcb-6t-W0F"/>
+                <constraint firstItem="5RN-y1-967" firstAttribute="leading" secondItem="mPZ-A5-NB5" secondAttribute="trailing" id="Ews-Ci-L2L"/>
+                <constraint firstAttribute="trailing" secondItem="iCD-FA-bVQ" secondAttribute="trailing" id="H3k-UB-e1A"/>
+                <constraint firstAttribute="trailing" secondItem="5RN-y1-967" secondAttribute="trailing" constant="15" id="HWV-rY-aBY"/>
+                <constraint firstAttribute="bottom" secondItem="QVB-iz-AKD" secondAttribute="bottom" id="MNN-lO-C8L"/>
+                <constraint firstItem="mPZ-A5-NB5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OYW-86-h2F"/>
+                <constraint firstItem="5RN-y1-967" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ucf-Kt-Gsx"/>
+                <constraint firstItem="iCD-FA-bVQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zvv-6W-qyW"/>
+                <constraint firstAttribute="bottom" secondItem="lbK-dp-xRt" secondAttribute="bottom" id="bxa-NP-Juk"/>
+                <constraint firstItem="lbK-dp-xRt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fzj-BE-MXl"/>
+                <constraint firstAttribute="bottom" secondItem="gyg-97-QkB" secondAttribute="bottom" id="h0K-8Q-qb4"/>
+                <constraint firstItem="QVB-iz-AKD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="htu-RK-9D5"/>
+                <constraint firstItem="mPZ-A5-NB5" firstAttribute="leading" secondItem="lbK-dp-xRt" secondAttribute="trailing" id="rRM-Zf-Gec"/>
+                <constraint firstAttribute="bottom" secondItem="mPZ-A5-NB5" secondAttribute="bottom" id="scg-iM-X0l"/>
+                <constraint firstItem="gyg-97-QkB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yIq-Sg-7hv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+        </collectionViewCell>
+    </objects>
+</document>
