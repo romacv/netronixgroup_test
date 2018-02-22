@@ -25,16 +25,16 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVB-iz-AKD">
-                        <rect key="frame" x="15" y="0.0" width="80" height="87"/>
+                        <rect key="frame" x="8" y="0.0" width="90" height="87"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="80" id="3jK-gZ-Atd"/>
+                            <constraint firstAttribute="width" constant="90" id="3jK-gZ-Atd"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-97-QkB">
-                        <rect key="frame" x="95" y="0.0" width="2" height="87"/>
+                        <rect key="frame" x="98" y="0.0" width="2" height="87"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="2" id="eDW-wj-5Tw"/>
@@ -48,23 +48,27 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5RN-y1-967">
-                        <rect key="frame" x="261" y="0.0" width="44" height="87"/>
+                        <rect key="frame" x="272" y="0.0" width="40" height="87"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="44" id="SEV-Xc-Wef"/>
+                            <constraint firstAttribute="width" constant="40" id="SEV-Xc-Wef"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPZ-A5-NB5">
-                        <rect key="frame" x="259" y="0.0" width="2" height="87"/>
+                        <rect key="frame" x="270" y="0.0" width="2" height="87"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="2" id="xHO-9C-Y9a"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-dp-xRt">
-                        <rect key="frame" x="105" y="0.0" width="146" height="87"/>
+                        <rect key="frame" x="108" y="0.0" width="154" height="87"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="tSr-qv-bDr"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="yCa-Cj-Yoo"/>
+                        </constraints>
                         <string key="text"> [1519310178,  12.905083517913196]
 [1519310179, 12.624566996991069]</string>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
@@ -82,7 +86,7 @@
                 <constraint firstAttribute="bottom" secondItem="5RN-y1-967" secondAttribute="bottom" id="Dcb-6t-W0F"/>
                 <constraint firstItem="5RN-y1-967" firstAttribute="leading" secondItem="mPZ-A5-NB5" secondAttribute="trailing" id="Ews-Ci-L2L"/>
                 <constraint firstAttribute="trailing" secondItem="iCD-FA-bVQ" secondAttribute="trailing" id="H3k-UB-e1A"/>
-                <constraint firstAttribute="trailing" secondItem="5RN-y1-967" secondAttribute="trailing" constant="15" id="HWV-rY-aBY"/>
+                <constraint firstAttribute="trailing" secondItem="5RN-y1-967" secondAttribute="trailing" constant="8" id="HWV-rY-aBY"/>
                 <constraint firstAttribute="bottom" secondItem="QVB-iz-AKD" secondAttribute="bottom" id="MNN-lO-C8L"/>
                 <constraint firstItem="mPZ-A5-NB5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OYW-86-h2F"/>
                 <constraint firstItem="5RN-y1-967" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ucf-Kt-Gsx"/>
@@ -90,7 +94,7 @@
                 <constraint firstAttribute="bottom" secondItem="lbK-dp-xRt" secondAttribute="bottom" id="bxa-NP-Juk"/>
                 <constraint firstItem="lbK-dp-xRt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fzj-BE-MXl"/>
                 <constraint firstAttribute="bottom" secondItem="gyg-97-QkB" secondAttribute="bottom" id="h0K-8Q-qb4"/>
-                <constraint firstItem="QVB-iz-AKD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="htu-RK-9D5"/>
+                <constraint firstItem="QVB-iz-AKD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="htu-RK-9D5"/>
                 <constraint firstItem="mPZ-A5-NB5" firstAttribute="leading" secondItem="lbK-dp-xRt" secondAttribute="trailing" constant="8" id="rRM-Zf-Gec"/>
                 <constraint firstAttribute="bottom" secondItem="mPZ-A5-NB5" secondAttribute="bottom" id="scg-iM-X0l"/>
                 <constraint firstItem="gyg-97-QkB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yIq-Sg-7hv"/>

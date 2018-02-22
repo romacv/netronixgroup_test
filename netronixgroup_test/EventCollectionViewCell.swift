@@ -19,4 +19,16 @@ class EventCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
+    func configureCell(item: Event) {
+        self.labelName.text = item.name
+        var measurementsString = ""
+        for itemMeasurement in item.measurements {
+            for measurement in itemMeasurement {
+                measurementsString.append(measurement.measurementValue.joined(separator: ","))
+            }
+            measurementsString.append("\n")
+        }
+        self.labelMeasurements.text = measurementsString
+        self.labelUnit.text = item.unit
+    }
 }

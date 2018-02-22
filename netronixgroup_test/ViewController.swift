@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     let cellId = "cell"
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var labelTop: UILabel!
     var arrayEvents: Array<Event> = []
     
     // MARK: Main
@@ -22,7 +23,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     // MARK: Actions
-    func setup() {
+    func setup() {  
         collectionView.register(UINib.init(nibName: "EventCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
         collectionView.decelerationRate = UIScrollViewDecelerationRateFast
         collectionView.reloadData()
@@ -33,22 +34,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                      successHandler: { (response) in
                                         let responseArray = response.arrayValue
                                         for responseItem in responseArray {
-                                            
                                             var event = Event.init()
                                             event.mapping(json: responseItem)
                                             self.arrayEvents.append(event)
                                         }
                                         DispatchQueue.main.async {
+                                            self.labelTop.text = "Events count: \(self.arrayEvents.count.description)"
                                             self.collectionView.reloadData()
                                         }
         },
                                      errorHandler: { (error) in
                                         print(error)
         })
-    }
-    
-    func configureCell(cell: EventCollectionViewCell, item: Event) {
-        
     }
 
     // MARK: Collection View
@@ -59,16 +56,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! EventCollectionViewCell
         let item = arrayEvents[indexPath.row]
-        cell.labelName.text = item.name
-        var measurementsString = ""
-        for itemMeasurement in item.measurements {
-            for measurement in itemMeasurement {
-                measurementsString.append(measurement.measurementValue.joined(separator: ","))
-            }
-            measurementsString.append("\n")
-        }
-        cell.labelMeasurements.text = measurementsString
-        cell.labelUnit.text = item.unit
+        cell.configureCell(item: item)
         
         return cell
     }
