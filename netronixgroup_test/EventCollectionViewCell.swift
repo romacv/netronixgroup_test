@@ -10,6 +10,10 @@ import UIKit
 
 class EventCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelMeasurements: UILabel!
+    @IBOutlet weak var labelUnit: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
