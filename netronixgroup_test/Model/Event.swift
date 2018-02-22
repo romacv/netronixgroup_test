@@ -27,10 +27,8 @@ struct Event {
         unit = json["unit"].string
     }
     
-    
     struct Measurement {
         var measurementValue: Array<String> = []
-        
         mutating func mapping(json: SwiftyJSON.JSON) {
             measurementValue = []
             for measurementValueItem in json.arrayValue {

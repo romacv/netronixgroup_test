@@ -17,14 +17,12 @@ extension APIManager {
     func sseRequest(parameters: [String : Any],
                     successHandler: @escaping (SwiftyJSON.JSON) -> Void,
                     errorHandler: @escaping (Error) -> Void) {
-        
         requestStream(parameters: parameters,
                       encoding: URLEncoding.default,
                       headers: [:],
                       method: .get,
                       path: kURLAPI + kSsePath,
                       successHandler:  { (response) in
-                        
                         let utf8Text = String(data: response as! Data, encoding: .utf8)
                         let clearJsonString = utf8Text?.replacingOccurrences(of: "data: ", with: "")
                         let jsonData = (clearJsonString?.data(using: String.Encoding.utf8))!
@@ -34,11 +32,9 @@ extension APIManager {
                             successHandler(json)
                             return
                         }
-                            
                         catch {
                             errorHandler(NSError(domain:String(describing: self), code:0, userInfo:["Error parsing json" : "Error parsing json"]))
                         }
-                        
         }, errorHandler: { (error) in
             errorHandler(error)
         })

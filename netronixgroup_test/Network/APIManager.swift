@@ -23,7 +23,6 @@ class APIManager: NSObject {
                        errorHandler: @escaping (Error) -> Void) {
         let request = Alamofire.request(path, method: method, parameters: parameters, encoding: encoding, headers: headers)
         request.stream { (streamResponse) in
-            
             successHandler(streamResponse)
         }
         request.responseData { response in

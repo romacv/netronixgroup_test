@@ -10,7 +10,6 @@
 		065BF4506A9BDD677096396E /* Pods_netronixgroup_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292A9CECAAC71C2F49A9B631 /* Pods_netronixgroup_testTests.framework */; };
 		F38A1C45585A19F2AE931FBA /* Pods_netronixgroup_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */; };
 		F823E3D0203E3CC500EE1991 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823E3CF203E3CC500EE1991 /* APIManager.swift */; };
-		F858C396203E7E620057BB26 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858C395203E7E620057BB26 /* Helpers.swift */; };
 		F858C398203E80960057BB26 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858C397203E80960057BB26 /* Event.swift */; };
 		F858C39B203F0A230057BB26 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858C399203F0A230057BB26 /* EventCollectionViewCell.swift */; };
 		F858C39C203F0A230057BB26 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F858C39A203F0A230057BB26 /* EventCollectionViewCell.xib */; };
@@ -41,7 +40,6 @@
 		D1D9CD13899F5AF194AB601C /* Pods-netronixgroup_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netronixgroup_testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netronixgroup_testTests/Pods-netronixgroup_testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D52FB5A1B28B92E7DFCF0BC9 /* Pods_netronixgroup_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netronixgroup_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F823E3CF203E3CC500EE1991 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		F858C395203E7E620057BB26 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		F858C397203E80960057BB26 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F858C399203F0A230057BB26 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		F858C39A203F0A230057BB26 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -102,6 +100,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F858C39D203F2B180057BB26 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F8DA74E7203E28900001CF35 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F858C39E203F2B210057BB26 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F8DA74E5203E28900001CF35 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F858C39F203F2B310057BB26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8DA74F1203E28900001CF35 /* Info.plist */,
+				F8DA74EC203E28900001CF35 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F858C3A0203F2B3C0057BB26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8DA74EE203E28900001CF35 /* LaunchScreen.storyboard */,
+				F8DA74E9203E28900001CF35 /* Main.storyboard */,
+				F858C399203F0A230057BB26 /* EventCollectionViewCell.swift */,
+				F858C39A203F0A230057BB26 /* EventCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F858C3A1203F2B5E0057BB26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F858C397203E80960057BB26 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F858C3A2203F2B840057BB26 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F823E3CF203E3CC500EE1991 /* APIManager.swift */,
+				F8F864E3203E4327009E39B6 /* APIManager+Methods.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F8DA74D9203E28900001CF35 = {
 			isa = PBXGroup;
 			children = (
@@ -125,18 +176,12 @@
 		F8DA74E4203E28900001CF35 /* netronixgroup_test */ = {
 			isa = PBXGroup;
 			children = (
-				F8DA74E5203E28900001CF35 /* AppDelegate.swift */,
-				F8DA74E7203E28900001CF35 /* ViewController.swift */,
-				F8DA74E9203E28900001CF35 /* Main.storyboard */,
-				F8DA74EC203E28900001CF35 /* Assets.xcassets */,
-				F8DA74EE203E28900001CF35 /* LaunchScreen.storyboard */,
-				F8DA74F1203E28900001CF35 /* Info.plist */,
-				F823E3CF203E3CC500EE1991 /* APIManager.swift */,
-				F8F864E3203E4327009E39B6 /* APIManager+Methods.swift */,
-				F858C395203E7E620057BB26 /* Helpers.swift */,
-				F858C397203E80960057BB26 /* Event.swift */,
-				F858C399203F0A230057BB26 /* EventCollectionViewCell.swift */,
-				F858C39A203F0A230057BB26 /* EventCollectionViewCell.xib */,
+				F858C39E203F2B210057BB26 /* App */,
+				F858C3A1203F2B5E0057BB26 /* Model */,
+				F858C3A2203F2B840057BB26 /* Network */,
+				F858C39F203F2B310057BB26 /* Resources */,
+				F858C3A0203F2B3C0057BB26 /* View */,
+				F858C39D203F2B180057BB26 /* ViewController */,
 			);
 			path = netronixgroup_test;
 			sourceTree = "<group>";
@@ -358,7 +403,6 @@
 				F8DA74E8203E28900001CF35 /* ViewController.swift in Sources */,
 				F858C398203E80960057BB26 /* Event.swift in Sources */,
 				F8DA74E6203E28900001CF35 /* AppDelegate.swift in Sources */,
-				F858C396203E7E620057BB26 /* Helpers.swift in Sources */,
 				F8F864E4203E4327009E39B6 /* APIManager+Methods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
