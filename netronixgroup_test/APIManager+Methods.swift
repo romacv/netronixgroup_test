@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import SwiftyJSON
 
 private let kURLAPI = "https://jsdemo.envdev.io/"
 private let kSsePath = "sse"
@@ -14,15 +15,32 @@ private let kSsePath = "sse"
 extension APIManager {
     
     func sseRequest(parameters: [String : Any],
-                    completionHandler: @escaping (Any) -> Void) {
+                    successHandler: @escaping (Any) -> Void,
+                    errorHandler: @escaping (Any) -> Void) {
+        
         requestStream(parameters: parameters,
                       encoding: URLEncoding.default,
                       headers: [:],
                       method: .get,
-                      path: kURLAPI + kSsePath) { (response) in
+                      path: kURLAPI + kSsePath,
+                      successHandler:  { (response) in
                         
                         let utf8Text = String(data: response as! Data, encoding: .utf8)
-                        print(utf8Text)
-        }
+                        let clearJsonString = utf8Text?.replacingOccurrences(of: "data: ", with: "")
+                        let jsonData = (clearJsonString?.data(using: String.Encoding.utf8))!
+                        do {
+                            let json = try JSON(data: jsonData)
+                            print(json)
+                            successHandler(json)
+                            return
+                        }
+                            
+                        catch {
+                            errorHandler(NSError(domain:String(describing: self), code:0, userInfo:["Error parsing json" : "Error parsing json"]))
+                        }
+                        
+        }, errorHandler: { (error) in
+            errorHandler(error)
+        })
     }
 }
