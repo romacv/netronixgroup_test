@@ -10,4 +10,17 @@ git clone https://github.com/romacv/netronixgroup_test.git
 ```
 netronixgroup_test.xcworkspace
 ```
-3. Select netronixgroup_test target and any of simulator or real iOS Device
+3. Select netronixgroup_test target and any of simulator or real iOS Device 
+<img src="https://raw.githubusercontent.com/romacv/netronixgroup_test/master/Screen%20Shot%202018-02-24%20at%2015.52.18.png" width="320">
+
+
+## Unit tests
+Project contain unit test for validate JSON response.
+For example it have 3 methods:
+```
+func testEventDataGoodStructure() - With perfect JSON model response
+func testEventDataNoMeasurements() - JSON model response missing Measurements array
+func testEventDataWithoutUnit() - // JSON model response missing Unit value
+```
+You can try to launch each or together from netronixgroup_testTests.swift file.
+<img src="https://raw.githubusercontent.com/romacv/netronixgroup_test/master/Screen%20Shot%202018-02-24%20at%2015.59.07.png" width="320">
